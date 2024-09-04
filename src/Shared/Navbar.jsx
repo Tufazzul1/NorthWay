@@ -18,7 +18,7 @@ const Navbar = () => {
             <li key={index}>
                 <NavLink
                     className={({ isActive }) =>
-                        isActive ? 'text-[#ff5c33] font-bold' : 'font-bold'
+                        isActive ? 'text-[#F6941E] font-bold' : 'font-bold'
                     }
                     to={item.path}
                 >
