@@ -1,10 +1,35 @@
-import { Link } from "react-router-dom";
-import Logo from "../assets/Logo.png"
-
+import { Link, NavLink } from "react-router-dom";
+import Logo from "../assets/Logo.png";
+import Button from "../Component/Button";
 
 const Navbar = () => {
+
+    const navItems = [
+        { name: "Home", path: "/" },
+        { name: "About Us", path: "/about" },
+        { name: "Study Destination", path: "/destination" },
+        { name: "Gallery", path: "/gallery" },
+        { name: "Blogs", path: "/blogs" },
+        { name: "Contact Us", path: "/contact" }
+    ];
+
+    const renderNavLinks = () => {
+        return navItems.map((item, index) => (
+            <li key={index}>
+                <NavLink
+                    className={({ isActive }) =>
+                        isActive ? 'text-[#ff5c33] font-bold' : 'font-bold'
+                    }
+                    to={item.path}
+                >
+                    {item.name}
+                </NavLink>
+            </li>
+        ));
+    };
+
     return (
-        <nav className="navbar bg-base-100 max-w-7xl mx-auto">
+        <nav className="navbar bg-base-100 max-w-7xl mx-auto py-5">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -24,36 +49,20 @@ const Navbar = () => {
                     <ul
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li><a>Item 1</a></li>
-                        <li>
-                            <a>Parent</a>
-                            <ul className="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a>Item 3</a></li>
+                        {renderNavLinks()}
                     </ul>
                 </div>
-                <Link to='/'><img className="w-[100px]" src={Logo} alt="Logo" /></Link>
+                <Link to='/'>
+                    <img className="w-[100px]" src={Logo} alt="Logo" />
+                </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li>
-                        <details>
-                            <summary>Parent</summary>
-                            <ul className="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </details>
-                    </li>
-                    <li><a>Item 3</a></li>
+                    {renderNavLinks()}
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                <Button text={"Aquire Now"}></Button>
             </div>
         </nav>
     );
