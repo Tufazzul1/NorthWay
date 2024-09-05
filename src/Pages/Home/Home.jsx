@@ -5,12 +5,14 @@ import Study from "../../Component/Study";
 import Career from "../../Component/Career";
 import Cost from "../../Component/Cost";
 import Univercities from "../../Component/Univercities";
+import Application from "../../Component/Application";
 
 
 const Home = () => {
     return (
         <div>
             <Banner></Banner>
+            <Application></Application>
             <Study></Study>
             <Career></Career>
             <Univercities></Univercities>
