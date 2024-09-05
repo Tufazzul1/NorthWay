@@ -1,9 +1,13 @@
 import Banner from "../../Component/Banner";
+import Blog from "../../Component/Blog";
 
 
 const Home = () => {
     return (
-        <Banner></Banner>
+        <div>
+            <Banner></Banner>
+            <Blog></Blog>
+        </div>
     );
 };
 
