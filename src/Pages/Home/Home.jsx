@@ -4,6 +4,7 @@ import Faq from "../../Component/Faq";
 import Study from "../../Component/Study";
 import Career from "../../Component/Career";
 import Cost from "../../Component/Cost";
+import Univercities from "../../Component/Univercities";
 
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
             <Banner></Banner>
             <Study></Study>
             <Career></Career>
+            <Univercities></Univercities>
             <Cost></Cost>
             <Faq></Faq>
             <Blog></Blog>
