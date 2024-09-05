@@ -7,6 +7,7 @@ import Cost from "../../Component/Cost";
 import Univercities from "../../Component/Univercities";
 import Application from "../../Component/Application";
 import Glance from "../../Component/Glance";
+import Review from "../../Component/Review";
 
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
             <Univercities></Univercities>
             <Cost></Cost>
             <Glance></Glance>
+            <Review></Review>
             <Faq></Faq>
             <Blog></Blog>
         </div>

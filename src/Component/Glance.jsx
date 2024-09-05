@@ -8,7 +8,7 @@ const Glance = () => {
                 <SectionTitle heading={"USA At a"} color={"Glance"}></SectionTitle>
             </div>
             <div className="p-4">
-                <div className="grid grid-cols-3 p-6 rounded-md shadow-md">
+                <div className="grid md:grid-cols-3 p-6">
                     <div className="bg-[#F6941E] p-3 text-center text-white">
                         <h3 className="font-bold text-lg">Course Duration</h3>
                         <p>4 Years (Bachelor’s)</p>
@@ -36,16 +36,16 @@ const Glance = () => {
                         <h3 className="font-bold text-lg">Tuition Fee (Yearly)</h3>
                         <p>10000 To 55000 (USD)</p>
                     </div>
-                    <div className="p-3 bg-[#F6941E] text-center">
+                    <div className="p-3 bg-[#F6941E] text-white text-center">
                         <h3 className="font-bold text-lg">Living Cost (Yearly)</h3>
                         <p>10000 To 18000 (USD)</p>
                     </div>
-                    <div className="p-3 bg-[#F6941E] ml-2 mr-2 text-center">
+                    <div className="p-3 bg-[#F6941E] text-white ml-2 mr-2 text-center">
                         <h3 className="font-bold text-lg">Visa Application</h3>
                         <p>160 (USD)</p>
                         <p>SEVIS Fee 350 (USD)</p>
                     </div>
-                    <div className="p-3 bg-[#F6941E] text-center">
+                    <div className="p-3 bg-[#F6941E] text-white text-center">
                         <h3 className="font-bold text-lg">Air Ticket</h3>
                         <p>100000 To 150000 (BDT)</p>
                     </div>
