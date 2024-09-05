@@ -1,10 +1,9 @@
+import Application from "../../Component/Application";
 
 
 const About = () => {
     return (
-        <div>
-            Hello From about
-        </div>
+        <Application></Application>
     );
 };
 

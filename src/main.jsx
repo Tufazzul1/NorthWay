@@ -8,6 +8,11 @@ import {
 import Root from './Root/Root';
 import Home from './Pages/Home/Home';
 import About from './Pages/About/About';
+import StudyDestination from './Pages/StudyDestination/StudyDestination';
+import Gallery from './Pages/Gallery/Gallery';
+import Blogs from './Pages/Blogs/blogs';
+import Contact from './Pages/Contact/Contact';
+
 
 const router = createBrowserRouter([
   {
@@ -21,6 +26,22 @@ const router = createBrowserRouter([
       {
         path : "/about",
         element : <About></About>
+      },
+      {
+        path : "/destination",
+        element : <StudyDestination></StudyDestination>
+      },
+      {
+        path : "/gallery",
+        element : <Gallery></Gallery>
+      },
+      {
+        path : "/blogs",
+        element : <Blogs></Blogs>
+      },
+      {
+        path : "/contact",
+        element : <Contact></Contact>
       },
     ]
   },

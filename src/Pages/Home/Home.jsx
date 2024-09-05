@@ -8,6 +8,7 @@ import Univercities from "../../Component/Univercities";
 import Application from "../../Component/Application";
 import Glance from "../../Component/Glance";
 import Review from "../../Component/Review";
+import Student from "../../Component/Student";
 
 
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
             <Cost></Cost>
             <Glance></Glance>
             <Review></Review>
+            <Student></Student>
             <Faq></Faq>
             <Blog></Blog>
         </div>
