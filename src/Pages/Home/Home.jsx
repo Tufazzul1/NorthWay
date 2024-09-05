@@ -6,6 +6,7 @@ import Career from "../../Component/Career";
 import Cost from "../../Component/Cost";
 import Univercities from "../../Component/Univercities";
 import Application from "../../Component/Application";
+import Glance from "../../Component/Glance";
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
             <Career></Career>
             <Univercities></Univercities>
             <Cost></Cost>
+            <Glance></Glance>
             <Faq></Faq>
             <Blog></Blog>
         </div>
