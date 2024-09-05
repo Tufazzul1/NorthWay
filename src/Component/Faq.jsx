@@ -3,7 +3,7 @@ import faqImg from "../assets/faq.png"
 
 const Faq = () => {
     return (
-        <div className="my-8 md:px-8 max-w-6xl mx-auto">
+        <div className="my-16 md:px-8 max-w-6xl mx-auto">
 
             <div className="flex flex-col md:flex-row gap-8 items-center">
                 <div className="w-full md:w-1/2 p-2">
