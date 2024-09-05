@@ -1,7 +1,7 @@
 import Blog from "../../Component/Blog";
 
 
-const Blogs = () => {
+const OurBlogs = () => {
     return (
         <div>
             <Blog></Blog>
@@ -9,4 +9,4 @@ const Blogs = () => {
     );
 };
 
-export default Blogs;
+export default OurBlogs;
